@@ -1,0 +1,33 @@
+{
+    "dependencies": [
+        {
+            "name": "asobo-aircraft-b787-10",
+            "package_version": "0.1.46"
+        },
+        {
+            "name": "asobo-vcockpits-instruments-b787-10",
+            "package_version": "0.1.54"
+        },
+        {
+            "name": "asobo-vcockpits-instruments-airliners",
+            "package_version": "0.1.58"
+        },
+        {
+            "name": "fs-base-aircraft-common",
+            "package_version": "0.1.69"
+        }
+    ],
+    "content_type": "AIRCRAFT",
+    "title": "B787-next",
+    "manufacturer": "Boeing",
+    "creator": "Mark Walter",
+    "package_version": "0.0.1",
+    "minimum_game_version": "1.10.5",
+    "release_notes": {
+        "neutral": {
+            "LastUpdate": "",
+            "OlderHistory": ""
+        }
+    },
+    "total_package_size": "00000000000000145154"
+}

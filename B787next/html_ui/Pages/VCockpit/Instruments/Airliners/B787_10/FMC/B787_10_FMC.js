@@ -98,6 +98,7 @@ class B787_10_FMC extends Boeing_FMC {
             this._execLight = this.querySelector(".fms-exec-light");
             this._timeDivs = document.body.querySelectorAll(".fms-time");
             this._dateDivs = document.body.querySelectorAll(".fms-date");
+            this._pageButtons = this.querySelectorAll(".active.page-button");
     
             document.body.addEventListener("mousemove", (e) => {
                 let x = e.clientX - 18;
@@ -105,6 +106,16 @@ class B787_10_FMC extends Boeing_FMC {
                 this._pointer.style.left = x + "px";
                 this._pointer.style.top = y + "px";
             });
+
+            this._pageButtons.forEach(b => {
+                b.addEventListener("mouseenter", () => {
+                    b.classList.add("hover");
+                });
+                b.addEventListener("mouseleave", () => {
+                    b.classList.remove("hover");
+                });
+            });
+
             this.getChildById(".fms-init-ref").addEventListener("mouseup", () => {
                 B787_10_FMC_InitRefIndexPage.ShowPage1(this);
             });
@@ -901,9 +912,12 @@ class B787_10_FMC extends Boeing_FMC {
         let btnH = 0.73;
         let btnW = 0.10;
         let zoneH = 0.5;
-        let zoneW = 0.77;
+        let zoneW = 0.75;
+        if (isRightSide) {
+            zoneW = 0.765;
+        }
         let h = 60;
-        let w = 300;
+        let w = 340;
         let btnHPx = Math.floor(btnH * h);
         let btnWPx = Math.floor(btnW * w);
         let zoneHPx = Math.floor(zoneH * h);
@@ -931,9 +945,9 @@ class B787_10_FMC extends Boeing_FMC {
         path.setAttribute("stroke-width", "3");
         path.setAttribute("stroke", "magenta");
         if (isRightSide) {
-            path.setAttribute("transform", "translate(" + w + ", -5) scale(-1, 1)");
+            path.setAttribute("transform", "translate(" + (w - 10) + ", -5) scale(-1, 1)");
         } else {
-            path.setAttribute("transform", "translate(0, -5)");
+            path.setAttribute("transform", "translate(-8, -5)");
         }
         if (container instanceof SVGSVGElement) {
             container.style.position = "fixed";
@@ -967,7 +981,7 @@ class B787_10_FMC extends Boeing_FMC {
         for (let i = 0; i < 6; i++) {
             let lineSelection = this.generateLineSelectionElement(parent, true);
             lineSelection.style.top = (y + Math.floor(89 + i * 54)) + "px";
-            lineSelection.style.left = (x + 340) + "px";
+            lineSelection.style.left = (x + 315) + "px";
             lineSelection.style.opacity = "0";
             let ii = i;
             lineSelection.addEventListener("mouseenter", () => {

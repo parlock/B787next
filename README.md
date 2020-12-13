@@ -12,3 +12,7 @@ To install copy the B787next folder into your community packages folder.
 - Updated Legs page to auto update during flight
 - Updated NavRad page to auto update during flight
 - Updates to the legs page to make sure display of FL and Speed is not a decimal value
+
+## PFD:
+- Added wind info (not complete)
+- Cleaned up the waypoint info

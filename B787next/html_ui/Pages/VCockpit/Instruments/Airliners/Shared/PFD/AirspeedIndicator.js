@@ -960,7 +960,7 @@ class Jet_PFD_AirspeedIndicator extends HTMLElement {
                 this.cursorSVGShape.setAttribute("fill", "black");
                 this.cursorSVGShape.setAttribute("d", "M2 2 L76 2 L76 28 L88 38 L76 50 L76 78 L2 78 Z");
                 this.cursorSVGShape.setAttribute("stroke", (this.isHud) ? "lime" : "white");
-                this.cursorSVGShape.setAttribute("stroke-width", "0.85");
+                this.cursorSVGShape.setAttribute("stroke-width", "3");
                 this.cursorSVG.appendChild(this.cursorSVGShape);
                 var _cursorPosX = -14;
                 var _cursorPosY = cursorHeight * 0.5;
@@ -1043,7 +1043,7 @@ class Jet_PFD_AirspeedIndicator extends HTMLElement {
             {
                 let shape = document.createElementNS(Avionics.SVG.NS, "path");
                 shape.setAttribute("fill", "none");
-                shape.setAttribute("stroke", (this.isHud) ? "lime" : "#D570FF");
+                shape.setAttribute("stroke", (this.isHud) ? "lime" : "magenta");
                 shape.setAttribute("stroke-width", "4");
                 shape.setAttribute("d", "M 0 22 L 25 10 L 52 10 L 52 34 L 25 34 Z");
                 this.targetSpeedPointerSVG.appendChild(shape);

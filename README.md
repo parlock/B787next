@@ -16,3 +16,5 @@ To install copy the B787next folder into your community packages folder.
 ## PFD:
 - Added wind info (not complete)
 - Cleaned up the waypoint info
+- Updates to the stroke width of the airspeed/altitude bugs
+- Updates to the stroke width of the current airspeed box to match current altitude box.

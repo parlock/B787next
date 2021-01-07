@@ -919,7 +919,7 @@ class Jet_PFD_AltimeterIndicator extends HTMLElement {
                 if (!this.targetAltitudeIndicatorSVGShape)
                     this.targetAltitudeIndicatorSVGShape = document.createElementNS(Avionics.SVG.NS, "path");
                 this.targetAltitudeIndicatorSVGShape.setAttribute("fill", "none");
-                this.targetAltitudeIndicatorSVGShape.setAttribute("stroke", (this.isHud) ? "lime" : "#D570FF");
+                this.targetAltitudeIndicatorSVGShape.setAttribute("stroke", (this.isHud) ? "lime" : "magenta");
                 this.targetAltitudeIndicatorSVGShape.setAttribute("stroke-width", "4");
                 this.targetAltitudeIndicatorSVGShape.setAttribute("d", "M 10 20 L 55 20 L 55 80 L 10 80 L 10 60 L 18 50 L 10 40 Z");
                 this.targetAltitudeIndicatorSVG.appendChild(this.targetAltitudeIndicatorSVGShape);

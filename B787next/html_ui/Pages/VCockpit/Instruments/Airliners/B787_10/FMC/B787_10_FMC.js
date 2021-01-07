@@ -945,9 +945,9 @@ class B787_10_FMC extends Boeing_FMC {
         path.setAttribute("stroke-width", "3");
         path.setAttribute("stroke", "magenta");
         if (isRightSide) {
-            path.setAttribute("transform", "translate(" + (w - 10) + ", -5) scale(-1, 1)");
+            path.setAttribute("transform", "translate(" + (w - 10) + ", 1) scale(-1, 1)");
         } else {
-            path.setAttribute("transform", "translate(-8, -5)");
+            path.setAttribute("transform", "translate(-8, 1)");
         }
         if (container instanceof SVGSVGElement) {
             container.style.position = "fixed";

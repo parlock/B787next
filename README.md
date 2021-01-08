@@ -18,3 +18,4 @@ To install copy the B787next folder into your community packages folder.
 - Cleaned up the waypoint info
 - Updates to the stroke width of the airspeed/altitude bugs
 - Updates to the stroke width of the current airspeed box to match current altitude box.
+- Updates to fix issues with the compass from the last FS 2020 update.

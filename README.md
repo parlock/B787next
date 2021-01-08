@@ -22,3 +22,4 @@ To install copy the B787next folder into your community packages folder.
 
 # MFD:
 - Sync'd with latest from Asobo.  Some minor bugs in switching panels and L/R orientation.
+- Updated label sizes for fonts on waypoints, airports, VOR, etc...

@@ -19,3 +19,6 @@ To install copy the B787next folder into your community packages folder.
 - Updates to the stroke width of the airspeed/altitude bugs
 - Updates to the stroke width of the current airspeed box to match current altitude box.
 - Updates to fix issues with the compass from the last FS 2020 update.
+
+# MFD:
+- Sync'd with latest from Asobo.  Some minor bugs in switching panels and L/R orientation.

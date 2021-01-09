@@ -239,16 +239,6 @@
             "path": "html_ui/Pages/VCockpit/Instruments/Airliners/B787_10/PFD/B787_10_PFD.js",
             "size": 42197,
             "date": 132545405991972198
-        },
-        {
-            "path": "html_ui/Pages/VCockpit/Instruments/Airliners/Shared/PFD/AirspeedIndicator.js",
-            "size": 135241,
-            "date": 132524861396596160
-        },
-        {
-            "path": "html_ui/Pages/VCockpit/Instruments/Airliners/Shared/PFD/AltimeterIndicator.js",
-            "size": 97269,
-            "date": 132524850567684552
         }
     ]
 }
